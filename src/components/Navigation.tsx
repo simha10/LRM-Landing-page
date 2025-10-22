@@ -84,6 +84,10 @@ const Navigation = () => {
     } else {
       // If we're on the home page, scroll to section
       scrollToSection(sectionId);
+      // Close mobile menu after navigation
+      if (isMobile) {
+        setIsOpen(false);
+      }
     }
   };
 
@@ -156,7 +160,7 @@ const Navigation = () => {
         <div className="container flex items-center justify-between h-16 px-4">
           <Link to="/" className="flex items-center space-x-2">
             <span className="font-libre-baskerville font-bold text-xl tracking-tight bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
-              LRM
+              LRM Consultants
             </span>
           </Link>
           
