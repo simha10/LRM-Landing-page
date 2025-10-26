@@ -60,6 +60,28 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Progressive Web App (PWA) Support
+
+This project now includes PWA functionality, allowing it to be installed as a standalone application on mobile and desktop devices.
+
+### Features
+- Installable on mobile and desktop devices
+- Works offline with cached assets
+- App-like experience with standalone display mode
+- Home screen icon support
+
+### Development Scripts
+- `npm run dev` - Start development server
+- `npm run build` - Production build with PWA support
+- `npm run preview` - Preview built app locally
+- `npm run generate-icons` - Generate PWA icons from logo
+
+### Testing PWA Functionality
+1. Run `npm run build` to create a production build
+2. Run `npm run preview` to serve the built app
+3. Open the browser's developer tools and check the Application tab for PWA features
+4. Look for the "Install" button in the address bar (in Chrome-based browsers)
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/aa12e13c-f691-4902-b4be-9f3b4cb57f49) and click on Share -> Publish.
